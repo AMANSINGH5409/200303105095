@@ -10,4 +10,5 @@ app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 
-app.listen(PORT, () => console.log(`Server Running on ${PORT}`));
+app.listen(process.env.PORT);
+console.log("Server Started.....");
